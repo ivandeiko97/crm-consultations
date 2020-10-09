@@ -54,7 +54,7 @@ export default {
     },
     showNotification(text, isSuccess) {
       this.SHOW_NOTIFICATION({ text, isSuccess })
-      setTimeout(this.HIDE_NOTIFICATION, 3000)
+      setTimeout(this.HIDE_NOTIFICATION, 1000)
     }
   },
 }

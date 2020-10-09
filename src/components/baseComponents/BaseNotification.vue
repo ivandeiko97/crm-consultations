@@ -1,5 +1,8 @@
 <template>
-  <v-alert :type="type ? 'success' : 'error'" width="300" class="ma-auto" transition="fab-transition">
+  <v-alert 
+    :type="type ? 'success' : 'error'" 
+    class="notification"
+  >
     {{ text }}
   </v-alert>
 </template>
@@ -16,3 +19,13 @@ export default {
   }
 }
 </script>
+
+<style scoped>
+  .notification {
+    z-index: 1;
+    position: absolute;
+    width: 300px;
+    left: calc(50% - 150px);
+    top: -10px;
+  }
+</style>

@@ -6,6 +6,11 @@
       dark
     >
       <v-app-bar-nav-icon @click.stop="drawer = !drawer"></v-app-bar-nav-icon>
+      <base-button 
+        @click="$router.back()"
+        text="назад" 
+        v-if="$route.name !== 'patients-tables'"
+      />
     </v-app-bar>
     <v-navigation-drawer
       v-model="drawer"
